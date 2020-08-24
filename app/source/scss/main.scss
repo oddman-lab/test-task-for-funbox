@@ -1,0 +1,29 @@
+@import "fonts";
+@import "vars";
+
+body {
+	position: relative;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 26px;
+	font-family: "Exo2.0-Thin", "Arial", sans-serif;
+	color: black;
+	font-weight: 300;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}

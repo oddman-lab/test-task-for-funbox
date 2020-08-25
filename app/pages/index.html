@@ -4,15 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Нямушка</title>
 </head>
 <body>
- <h1>Тест</h1>
- <p>Тестировал тестировал да невытестировал</p>
+<main class="goods">
+  <div class="wrapper goods__wrapper">
+
+    <h1 class="goods__title">Ты сегодня покормил кота?</h1>
+
+    <section class="goods__list">
+      
+      <div class="product">
+        <div class="product__card product__card--default">
+          <div class="product__wrapper">
+              <p class="product__subtitle">Сказочное заморское явство</p>
+              <h2 class="product__name">Нямушка</h2>
+              <p class="product__ingredient">с фуа-гра</p>
+              <ul class="product__list">
+                <li class="product__item">10 порций</li>
+                <li class="product__item">мышь в подарок</li>
+              </ul>
+            <div class="product__bage bage bage--default">
+              <p class="bage__weight">0,5</p>
+              <p class="bage__weight--mass">кг</p>
+            </div>
+          </div>
+        </div>
+
+        <p data-type="fua-gra" class="product__cta cta">Чего сидишь? Порадуй котэ, <button data-cta='' class="action">купи</button>.</p>
+
+      </div>
+
+      <div class="product">
+        <div class="product__card product__card--default">
+          <div class="product__wrapper">
+            <p class="product__subtitle">Сказочное заморское явство</p>
+            <h2 class="product__name">Нямушка</h2>
+            <p class="product__ingredient">с рыбой</p>
+            <ul class="product__list">
+              <li class="product__item">40 порций</li>
+              <li class="product__item">2 мыши в подарок</li>
+            </ul>
+            <div class="product__bage bage bage--default">
+              <p class="bage__weight">2</p>
+              <p class="bage__weight--mass">кг</p>
+            </div>
+          </div>
+        </div>
+
+        <p data-type="fish" class="product__cta cta">Чего сидишь? Порадуй котэ, <button data-cta='' class="action">купи</button>.</p>
+      </div>
+
+      <div class="product">
+        <div class="product__card product__card--disabled">
+          <div class="product__wrapper">
+            <p class="product__subtitle">Сказочное заморское явство</p>
+            <h2 class="product__name">Нямушка</h2>
+            <p class="product__ingredient">с курой</p>
+            <ul class="product__list">
+              <li class="product__item">100 порций</li>
+              <li class="product__item">5 мышей в подарок</li>
+              <li class="product__item">заказчик доволен</li>
+            </ul>
+            <div class="product__bage bage bage--disabled">
+              <p class="bage__weight">5</p>
+              <p class="bage__weight--mass">кг</p>
+            </div>
+          </div>
+        </div>
+
+        <p data-type="chicken" class="product__cta cta cta--disabled">Печалька, с курой закончился.</p>
+      </div>
+
+    </section>
+
+  </div>
+</main>
 <script src="js/script.js"></script>
 </body>
 </html>
